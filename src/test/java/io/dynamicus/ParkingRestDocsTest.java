@@ -1,4 +1,4 @@
-package io.dynamicus.docs;
+package io.dynamicus;
 
 import io.dynamicus.controller.ParkingController;
 import org.junit.Test;
@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @WebMvcTest(ParkingController.class)
 @AutoConfigureRestDocs(outputDir = "target/generated-snippets")
-public class ParkingRestDocstest {
+public class ParkingRestDocsTest {
 
     @Autowired
     private MockMvc mockMvc;
