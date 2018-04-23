@@ -1,4 +1,4 @@
-package io.dynamicus.service;
+package io.dynamicus;
 
 import io.dynamicus.model.Zone;
 import org.springframework.stereotype.Service;

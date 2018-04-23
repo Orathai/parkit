@@ -1,7 +1,7 @@
-package io.dynamicus.service;
+package io.dynamicus;
 
 import io.dynamicus.model.Zone;
-import io.dynamicus.service.CalculatePriceService;
+import io.dynamicus.CalculatePriceService;
 import org.junit.Test;
 
 import java.time.LocalDateTime;

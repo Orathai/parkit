@@ -2,7 +2,7 @@ package io.dynamicus.controller;
 
 import io.dynamicus.model.Price;
 import io.dynamicus.model.Zone;
-import io.dynamicus.service.CalculatePriceService;
+import io.dynamicus.CalculatePriceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +23,9 @@ public class ParkingController {
 
     private static final Logger logger = LoggerFactory.getLogger(ParkingController.class);
 
-    @RequestMapping(method = RequestMethod.GET, value = "/price", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Price> getParkingPrice(@RequestParam(value = "minutes") int minutes,
-                                                 @RequestParam(value = "zone") String zone) {
+    @RequestMapping(method = RequestMethod.GET, value = "/prices", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Price> getPriceByZone(@RequestParam(value = "minutes") int minutes,
+                                                @RequestParam(value = "zone") String zone) {
 
         logger.info("GET parking price service at ZONE: " + zone + " DURATIONS: " + minutes);
 
