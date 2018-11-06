@@ -12,14 +12,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>2.0.6.RELEASE</version>
     </parent>
 
     <properties>
         <java.version>1.8</java.version>
         <docker.image.prefix>io.dynamicus</docker.image.prefix>
         <asciidoctor.maven.version>1.5.3</asciidoctor.maven.version>
-        <keycloak.version>3.4.3.Final</keycloak.version>
+        <keycloak.version>4.5.0.Final</keycloak.version>
     </properties>
 
     <dependencyManagement>
@@ -116,7 +116,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>
-                                ${project.build.outputDirectory}/static/docs
+                                src/main/resources/static/docs
                             </outputDirectory>
                             <resources>
                                 <resource>

@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(ParkingController.class)
-@AutoConfigureRestDocs(outputDir = "target/generated-snippets")
+@AutoConfigureRestDocs(outputDir = "target/generated-snippets", uriPort = 9000)
 public class ParkingRestDocsTest {
 
     @Autowired
